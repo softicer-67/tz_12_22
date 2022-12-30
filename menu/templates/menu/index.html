@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="{% static 'CSS/main.css' %}">
     {% load menu_extras %}
 </head>
-<body style="background-color: aliceblue">
-    <div class="category-wrap">
-      <h3>Категории</h3>
-        <ul>
-            <li>{% draw_menu 'Product category' %}</li>
-        </ul>
+<body style="background-color: aliceblue; padding: 30px">
+    <div class="container">
+        <div class="category-wrap">
+          <h3>Категории</h3>
+            <ul>
+                <li>{% draw_menu 'Product category 1' %}</li>
+                <br>
+                <li>{% draw_menu 'Product category 2' %}</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
