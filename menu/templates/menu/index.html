@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'CSS/main.css' %}">
+    {% load menu_extras %}
+</head>
+<body style="background-color: aliceblue">
+    <div class="category-wrap">
+      <h3>Категории</h3>
+        <ul>
+            <li>{% draw_menu 'Product category' %}</li>
+        </ul>
+    </div>
+</body>
+</html>
